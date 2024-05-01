@@ -76,7 +76,6 @@ jobs:
 
     - name: Prepare the environment
       run: |
-        sudo apt update && sudo apt -y upgrade
         sudo apt install git aria2 -y
         mkdir ofx_scripts
         cd ofx_scripts

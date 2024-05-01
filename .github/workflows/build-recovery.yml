@@ -146,6 +146,9 @@ jobs:
       uses: pierotofy/set-swap-space@master
       with:
         swap-size-gb: 12
+    - name: Update
+      run: |
+        sudo apt update && apt -y upgrade
 
     - name: Building recovery
       run: |
